@@ -99,6 +99,24 @@
     </div>
   </div>
 
+  <div class="explore-container">
+      <div class="explore-content text-center">
+        <h1 class="text-4xl font-semibold text-gray-200 leading-tight">
+          Turn <span class="primary-text">Your Work Revenue</span>
+        </h1>
+        <p class="text-gray-300 mt-4">
+          <span>
+            Subscribe to HIVE and gain access to a library of unique and beautiful fully edited videos <br>
+           contributed by video editors from all around the world!!
+          </span>
+        </p>
+        <button
+          class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
+          Explore Now
+        </button>
+      </div>
+  </div>
+
   <div class="subscribe-container">
     <div class="flex content w-full  justify-center items-center gap-20">
       <!-- Main Card -->
@@ -112,14 +130,14 @@
           <br>
           into <span class="primary-text">Revenue</span>
         </h1>
-        <p class="text-gray-400 mt-4">
+        <p class="text-gray-300 mt-4">
           Sign up as an editor to gain access to our library of stock <br>
           footage which you can use to create edits and resell on the <br>
           Hive platform.
         </p>
         <button
           class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
-          Become a Contributor
+          Subscribe Now
         </button>
       </div>
     </div>
