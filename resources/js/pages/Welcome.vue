@@ -148,10 +148,15 @@
         <div class="flex flex-col items-center footer-content">
           <div>
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img :src="imageUrl" class="h-14" alt="Flowbite Logo">
+              <img :src="imageUrl" class="h-12" alt="Flowbite Logo">
             </a>
           </div>
-          <div class="bottom-div-icons">02</div>
+          <div class="bottom-div-icons flex space-x-4 justify-center">
+            <a v-for="icon in socialMedia" :key="icon.name" :href="icon.url" target="_blank" rel="noopener noreferrer"
+              class="transition hover:opacity-75">
+              <img :src="icon.image" :alt="icon.name" class="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -159,19 +164,52 @@
         <div class="flex flex-col">
           <div class="footer-section flex flex-row">
             <div class="basis-1/3">
-              <h3 class="text-2xl font-semibold text-gray-200 leading-tight">
+              <h3 class="text-2xl font-semibold leading-tight">
                 <span class="primary-text">Company</span>
               </h3>
+              <ul class="flex flex-col items-left footer-content text-gray-200">
+                <li class="mt-4">
+                  <a href="">Become a contributor</a>
+                </li>
+                <li class="mt-4">
+                  <a href="">Terms and Conditions</a>
+                </li>
+                <li class="mt-4">
+                  <a href="">Privancy policy</a>
+                </li>
+              </ul>
             </div>
+
             <div class="basis-1/3">
-              <h3 class="text-2xl font-semibold text-gray-200 leading-tight">
+              <h3 class="text-2xl font-semibold leading-tight">
                 <span class="primary-text">Pricing and Plans</span>
               </h3>
+              <ul class="flex flex-col items-left footer-content text-gray-200">
+                <li class="mt-4">
+                  <a href="">Individual Plan</a>
+                </li>
+                <li class="mt-4">
+                  <a href="">Company Plan</a>
+                </li>
+                <li class="mt-4">
+                  <a href="">Subscriptions</a>
+                </li>
+              </ul>
             </div>
+
             <div class="basis-1/3">
-              <h1 class="text-2xl font-semibold text-gray-200 leading-tight">
+              <h1 class="text-2xl font-semibold leading-tight footer-content">
                 <span class="primary-text">Customer Support</span>
               </h1>
+
+              <ul class="flex flex-col items-left footer-content text-gray-200">
+                <li class="mt-4">
+                  <a href="">Contact Us</a>
+                </li>
+                <li class="mt-4">
+                  <a href="">FAQs</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -190,6 +228,13 @@ export default {
     return {
       imageUrl: "/images/Hive Logo white Text.png", // Relative to Laravel's public folder
       currentYear: new Date().getFullYear(),
+      socialMedia: [
+        { name: "X (Twitter)", image: "/images/fa6-brands_x-twitter.png", url: "https://www.twitter.com/" },
+        { name: "LinkedIn", image: "/images/bi_linkedin.png", url: "https://www.linkedin.com/" },
+        { name: "Instagram", image: "/images/ri_instagram-fill.png", url: "https://www.instagram.com/" },
+        { name: "Facebook", image: "/images/uiw_facebook.png", url: "https://www.facebook.com/" },
+        { name: "YouTube", image: "/images/mdi_youtube.png", url: "https://www.youtube.com/" },
+      ],
     };
   },
 };
