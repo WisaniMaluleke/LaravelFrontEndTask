@@ -17,6 +17,32 @@ html {
     background-color: #F4BF31;
 }
 
+.primary-text {
+    color: #F4BF31;
+}
+
+.hero-first {
+    height: 550px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 550px; /* Full viewport height */
+    color: #dbe6f2;
+    padding: 20px;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 @layer components {
     .btn-outline {
         @apply p-2 rounded-md border shadow-sm border-gray-500 dark:border-gray-800 hover:border-gray-400 hover:bg-gray-50 dark:hover:border-gray-700 dark:hover:bg-gray-800
@@ -109,5 +135,3 @@ html {
         @apply bg-background text-foreground;
     }
 }
-
-
