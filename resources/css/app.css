@@ -28,7 +28,7 @@ html {
     background-repeat: no-repeat;
     width: 584px;
     height: 344px;
-    border-radius: 1.5rem; /* Example with a 1.5rem border radius */
+    border-radius: 2px; /* Example with a 1.5rem border radius */
     align-items: center;
   }
 
