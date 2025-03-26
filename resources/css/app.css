@@ -24,7 +24,7 @@ html {
 .rectangleImage {
     background-image: url('/images/Rectangle 23421.png');
     background-size: fit;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     width: 584px;
     height: 344px;
@@ -32,16 +32,8 @@ html {
     align-items: center;
   }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers vertically */
-    height: 550px; /* Full viewport height */
-    color: #dbe6f2;
-    padding: 20px;
-}
-
 .background-container-banner {
+    height: 550px; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +44,16 @@ html {
     background-position: right;
     background-repeat: no-repeat; /* Prevents repeating */
     width: 100%;
+}
+
+.banner-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 550px; /* Full viewport height */
+    color: #dbe6f2;
+    padding: 20px;
 }
 
 .background-container {

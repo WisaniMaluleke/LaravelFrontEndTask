@@ -55,8 +55,8 @@
 
   <div class="container-fluid grid grid-cols-2 md:grid-cols-2 mt-20 relative">
     <!-- Left Section -->
-    <div class="text-white text-[50px] items-center">
-      <div class="hero-section">
+    <div class="text-white text-[50px]">
+      <div class="flex banner-text-section">
         <h1>
           Your Ultimate <br />
           Destination for <br />
@@ -105,29 +105,7 @@ export default {
   data() {
     return {
       imageUrl: "/images/Hive Logo white Text.png", // Relative to Laravel's public folder
-      rectangleImage: {
-        backgroundImage: "url('/images/Rectangle 23421.png')",
-        backgroundSize: "fit",
-        backgroundPosition: "center",
-        // opacity: "0.1", // Adjust transparency
-        width: "584px", /* Takes 50% of the screen width */
-        height: "344px",
-
-      },
     };
   },
 };
 </script>
-
-<style>
-/* Dark Hexagonal Background */
-.bg-dark-pattern {
-  background: url('/images/dark-pattern.png'), #121212;
-  background-size: cover;
-}
-
-/* Dark Card */
-.bg-dark-card {
-  background: linear-gradient(135deg, #1a1a1a, #222);
-}
-</style>
