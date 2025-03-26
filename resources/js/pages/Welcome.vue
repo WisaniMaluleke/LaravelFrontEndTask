@@ -98,6 +98,32 @@
       </div>
     </div>
   </div>
+
+  <div class="subscribe-container">
+    <div class="flex content w-full  justify-center items-center gap-20">
+      <!-- Main Card -->
+      <!-- Left Content -->
+      <div class="subscribeImage lg:w-1/2 mt-6 lg:mt-0 flex"></div>
+
+      <!-- Right Image -->
+      <div class="lg:w-1/2 text-left">
+        <h1 class="text-4xl font-semibold text-gray-200 leading-tight">
+          Turn <span class="primary-text">Your Work</span>
+          <br>
+          into <span class="primary-text">Revenue</span>
+        </h1>
+        <p class="text-gray-400 mt-4">
+          Sign up as an editor to gain access to our library of stock <br>
+          footage which you can use to create edits and resell on the <br>
+          Hive platform.
+        </p>
+        <button
+          class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
+          Become a Contributor
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
