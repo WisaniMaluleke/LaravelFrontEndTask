@@ -100,21 +100,20 @@
   </div>
 
   <div class="explore-container">
-      <div class="explore-content text-center">
-        <h1 class="text-4xl font-semibold text-gray-200 leading-tight">
-          Turn <span class="primary-text">Your Work Revenue</span>
-        </h1>
-        <p class="text-gray-300 mt-4">
-          <span>
-            Subscribe to HIVE and gain access to a library of unique and beautiful fully edited videos <br>
-           contributed by video editors from all around the world!!
-          </span>
-        </p>
-        <button
-          class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
-          Explore Now
-        </button>
-      </div>
+    <div class="explore-content text-center">
+      <h1 class="text-4xl font-semibold text-gray-200 leading-tight">
+        Turn <span class="primary-text">Your Work Revenue</span>
+      </h1>
+      <p class="text-gray-300 mt-4">
+        <span>
+          Subscribe to HIVE and gain access to a library of unique and beautiful fully edited videos <br>
+          contributed by video editors from all around the world!!
+        </span>
+      </p>
+      <button class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
+        Explore Now
+      </button>
+    </div>
   </div>
 
   <div class="subscribe-container">
@@ -142,6 +141,47 @@
       </div>
     </div>
   </div>
+  <footer class="flex flex-col">
+    <div class="footer-section flex flex-row pt-10">
+
+      <div class="basis-1/4">
+        <div class="flex flex-col items-center footer-content">
+          <div>
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img :src="imageUrl" class="h-14" alt="Flowbite Logo">
+            </a>
+          </div>
+          <div class="bottom-div-icons">02</div>
+        </div>
+      </div>
+
+      <div class="basis-3/4">
+        <div class="flex flex-col">
+          <div class="footer-section flex flex-row">
+            <div class="basis-1/3">
+              <h3 class="text-2xl font-semibold text-gray-200 leading-tight">
+                <span class="primary-text">Company</span>
+              </h3>
+            </div>
+            <div class="basis-1/3">
+              <h3 class="text-2xl font-semibold text-gray-200 leading-tight">
+                <span class="primary-text">Pricing and Plans</span>
+              </h3>
+            </div>
+            <div class="basis-1/3">
+              <h1 class="text-2xl font-semibold text-gray-200 leading-tight">
+                <span class="primary-text">Customer Support</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-row copy-right text-white items-center">
+      <p class="copy-right mr-20 pt-4">&copy; {{ currentYear }} Hive | Designed by CubeZoo</p>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -149,6 +189,7 @@ export default {
   data() {
     return {
       imageUrl: "/images/Hive Logo white Text.png", // Relative to Laravel's public folder
+      currentYear: new Date().getFullYear(),
     };
   },
 };
