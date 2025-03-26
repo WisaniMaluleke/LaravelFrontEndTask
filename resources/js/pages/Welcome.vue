@@ -53,9 +53,9 @@
   </div>
 
 
-  <div class="container-fluid grid grid-cols-2 md:grid-cols-2 mt-20">
-    <!-- ... -->
-    <div class="hero-first text-white text-[50px] items-center">
+  <div class="container-fluid grid grid-cols-2 md:grid-cols-2 mt-20 relative">
+    <!-- Left Section -->
+    <div class="text-white text-[50px] items-center">
       <div class="hero-section">
         <h1>
           Your Ultimate <br />
@@ -64,8 +64,39 @@
         </h1>
       </div>
     </div>
-    <!-- ... -->
-    <div :style="backgroundStyle" class="background-container"></div>
+
+    <!-- Right Background Section -->
+    <div class="background-container-banner"></div>
+  </div>
+
+  <div class="background-container">
+    <div class="flex content w-full  justify-center items-center px-6">
+      <!-- Main Card -->
+      <div class="your-work-card m-20 rounded-2xl p-8 lg:p-12 shadow-lg flex flex-col lg:flex-row items-center gap-10">
+
+        <!-- Left Content -->
+        <div class="lg:w-1/2 text-left">
+          <h1 class="text-4xl font-semibold text-gray-200 leading-tight">
+            Turn <span class="primary-text">Your Work</span>
+            <br>
+            into <span class="primary-text">Revenue</span>
+          </h1>
+          <p class="text-gray-400 mt-4">
+            Sign up as an editor to gain access to our library of stock <br>
+            footage which you can use to create edits and resell on the <br>
+            Hive platform.
+          </p>
+          <button
+            class="mt-6 bg-yellow-400 text-gray-900 px-5 py-3 rounded-lg font-medium hover:bg-yellow-500 transition">
+            Become a Contributor
+          </button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="rectangleImage lg:w-1/2 mt-6 lg:mt-0 flex justify-center"></div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -74,16 +105,29 @@ export default {
   data() {
     return {
       imageUrl: "/images/Hive Logo white Text.png", // Relative to Laravel's public folder
-      topImageUrl: "/images/Mask group.png", // Relative to Laravel's public folder
-      backgroundStyle: {
-        backgroundImage: "url('/images/Mask group.png')",
-        // backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",  // Prevents repeating
-        // backgroundPosition: "center",
-        height: "550px",
-        width: "100%",
+      rectangleImage: {
+        backgroundImage: "url('/images/Rectangle 23421.png')",
+        backgroundSize: "fit",
+        backgroundPosition: "center",
+        // opacity: "0.1", // Adjust transparency
+        width: "584px", /* Takes 50% of the screen width */
+        height: "344px",
+
       },
     };
   },
 };
 </script>
+
+<style>
+/* Dark Hexagonal Background */
+.bg-dark-pattern {
+  background: url('/images/dark-pattern.png'), #121212;
+  background-size: cover;
+}
+
+/* Dark Card */
+.bg-dark-card {
+  background: linear-gradient(135deg, #1a1a1a, #222);
+}
+</style>
